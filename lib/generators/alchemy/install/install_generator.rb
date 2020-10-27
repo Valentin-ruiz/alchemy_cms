@@ -103,11 +103,11 @@ module Alchemy
       end
 
       def setup_database
-        # rake("db:create", abort_on_failure: true)
+        rake("db:drop db:create db:structure:load", abort_on_failure: true)
         # We can't invoke this rake task, because Rails will use wrong engine names otherwise
-        # rake("railties:install:migrations", abort_on_failure: true)
-        # rake("db:migrate", abort_on_failure: true)
-        # install_tasks.inject_seeder
+        rake("railties:install:migrations", abort_on_failure: true)
+        rake("db:migrate", abort_on_failure: true)
+        install_tasks.inject_seeder
         # rake("db:seed", abort_on_failure: true)
       end
 
