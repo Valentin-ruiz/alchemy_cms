@@ -6,6 +6,11 @@
 //= link alchemy/print.css
 //= link alchemy/welcome.css
 //= link tinymce/plugins/alchemy_link/plugin.min.js
+//= link tinymce/plugins/colorpicker/plugin.min.js
+//= link tinymce/plugins/importcss/plugin.min.js
+//= link tinymce/plugins/template/plugin.min.js
+//= link tinymce/plugins/textcolor/plugin.min.js
+//= link tinymce/plugins/visualblocks/plugin.min.js
 //= link tinymce/tinymce.min.js
 //= link_directory ../stylesheets/tinymce/skins/alchemy/ .css
 //= link_directory ../stylesheets/tinymce/skins/alchemy/img/
